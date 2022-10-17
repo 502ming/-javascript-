@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue基础</title>
+    <style>li{list-style: none ;}</style>
+</head>
+<body>
+     //v-text属于覆盖了
+    <div id="app"  class="app">
+        <h1 v-text="message"></h1>
+    {{message}} <span>   {{message}}</span><h2>{{school}}</h2>
+    <span>{{campus[1]}}</span><li>{{campus[2]}}</li>
+    </div>
+    <script src="vue.js"></script>
+<script>
+let app=new Vue({
+        // el:"#app", 
+        el:".app",
+    data:{
+        message:"你好小黑",
+        school:{
+            name:"heimachengxuyuan",
+            mobile:"400800"
+      },
+    campus:["beijing ","shanghai","guangzhou"]
+   }
+})
+
+
+</script>
+ 
+
+</body>
+
+
+
+
+
+</html>
